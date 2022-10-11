@@ -2,16 +2,17 @@ import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './components/Main/Main';
 import Home from './components/Home/Home';
-import Topics from './components/Topics/Topics';
 import Statistics from './components/Statistics/Statistics';
 import Blog from './components/Blog/Blog';
 import Questions from './components/Questions/Questions';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 function App() {
   const router = createBrowserRouter([
     {
       path: '/',
       element: <Main></Main>,
+      errorElement: <ErrorPage></ErrorPage>,
       children:
         [
           {

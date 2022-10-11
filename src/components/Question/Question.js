@@ -18,8 +18,8 @@ const Question = ({ quiz }) => {
     }
     return (
         <div
-            className="max-w-screen-md flex rounded-lg border border-violet-900 shadow-md bg-gray-200">
-            <div className="bg-white p-12 rounded-lg shadow-lg w-full">
+            className="md:w-7/12 sm:w-11/12 flex rounded-lg border border-violet-900 shadow-lg bg-gray-200">
+            <div className="bg-white p-8 rounded-lg shadow-lg w-full">
                 <div className='flex items-center gap-4'>
                     <div>
                         <h5 className="mb-4 text-xl font-semibold tracking-tight text-violet-900">{question.slice(3, -4)}</h5>
@@ -29,7 +29,7 @@ const Question = ({ quiz }) => {
                     </div>
                 </div>
 
-                <div className="flex items-center justify-center mb-3">
+                <div className="flex mb-3">
                     <div class="flex flex-col gap-4" role="group">
                         {
                             options.map((input, idx) => <button key={idx} onClick={(event) => handleButtonClick(event.target.innerText)} className="block mt-2 border border-violet-900 rounded-lg py-2 px-6 hover:bg-violet-400 cursor-pointer">{input}</button>)

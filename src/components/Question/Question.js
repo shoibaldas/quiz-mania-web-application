@@ -38,7 +38,6 @@ const Question = ({ quiz }) => {
                 </div>
             </div>
         </div>
-
     );
 };
 

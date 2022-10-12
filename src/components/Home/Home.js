@@ -1,11 +1,12 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useContext, useEffect, useRef } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Topics from '../Topics/Topics';
 import lottie from 'lottie-web';
+import { RoutesContext } from '../Main/Main';
 
 const Home = () => {
-    const topics = useLoaderData().data;
-
+    const [topics] = useContext(RoutesContext);
+    const dataInfo = topics.data;
     const container = useRef(null)
 
     useEffect(() => {
@@ -48,7 +49,7 @@ const Home = () => {
             <h2 className='mb-12 text-3xl font-extrabold sm:text-4xl block text-indigo-600'>Choose one and play the quiz</h2>
             <div className="grid max-w-md gap-10 row-gap-8 lg:max-w-screen-lg sm:row-gap-10 lg:grid-cols-4 xl:max-w-screen-lg sm:mx-auto">
                 {
-                    topics.map(topic => <Topics
+                    dataInfo.map(topic => <Topics
                         key={topic.id}
                         topic={topic}
                     >

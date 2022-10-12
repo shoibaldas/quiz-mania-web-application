@@ -17,7 +17,7 @@ const Topics = ({ topic }) => {
                 </div>
                 <Link
                     to={`../home/${id}`}
-                    className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-violet-900 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                    className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white"
                 >
                     Start Quiz
                 </Link>

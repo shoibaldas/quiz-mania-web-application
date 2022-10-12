@@ -5,7 +5,6 @@ import logo from '../../logo-quiz.png';
 
 const Header = () => {
     const [navbar, setNavbar] = useState(false);
-
     return (
         <nav className="w-full bg-white shadow">
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
@@ -42,20 +41,20 @@ const Header = () => {
                 </div>
                 <div>
                     <div
-                        className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
+                        className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0  ${navbar ? "block" : "hidden"
                             }`}
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                            <li className="text-gray-600 hover:text-violet-600 hover:underline hover:underline-offset-4 hover:font-semibold">
+                            <li className="text-gray-600 hover:text-violet-600 hover:underline hover:underline-offset-4 hover:font-semibold transition duration-700">
                                 <Link to='/home'>Home</Link>
                             </li>
-                            <li className="text-gray-600 hover:text-violet-600 hover:underline hover:underline-offset-4 hover:font-semibold">
+                            <li className="text-gray-600 hover:text-violet-600 hover:underline hover:underline-offset-4 hover:font-semibold transition duration-700">
                                 <Link to='/home'>Topics</Link>
                             </li>
-                            <li className="text-gray-600 hover:text-violet-600 hover:underline hover:underline-offset-4 hover:font-semibold">
+                            <li className="text-gray-600 hover:text-violet-600 hover:underline hover:underline-offset-4 hover:font-semibold transition duration-700">
                                 <Link to='/statistics'>Statistics</Link>
                             </li>
-                            <li className="text-gray-600 hover:text-violet-600 hover:underline hover:underline-offset-4 hover:font-semibold">
+                            <li className="text-gray-600 hover:text-violet-600 hover:underline hover:underline-offset-4 hover:font-semibold transition duration-700">
                                 <Link to='/blog'>Blog</Link>
                             </li>
                         </ul>

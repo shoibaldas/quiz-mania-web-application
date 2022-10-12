@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useRef } from 'react';
-import { useLoaderData } from 'react-router-dom';
 import Topics from '../Topics/Topics';
 import lottie from 'lottie-web';
 import { RoutesContext } from '../Main/Main';

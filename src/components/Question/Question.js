@@ -4,9 +4,17 @@ import { EyeSlashIcon } from '@heroicons/react/24/solid'
 
 const Question = ({ quiz, positiveScore, setPositiveScore, negativeScore, setNegativeScore }) => {
     const { question, options, correctAnswer } = quiz;
+    console.log(options);
+    console.log(correctAnswer);
+
 
     const handleButtonClick = (answer) => {
-        if (JSON.stringify(answer) === JSON.stringify(correctAnswer)) {
+
+        answer = JSON.stringify(answer);
+        let answer2 = JSON.stringify(correctAnswer);
+        let correctAns = answer2.replace(/\s+/g, ' ').trim();
+
+        if (answer === correctAns) {
             setPositiveScore(positiveScore + 1);
             toast.success('The Answer is correct!')
         }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Question from '../Question/Question';
 
@@ -7,6 +7,10 @@ const Questions = () => {
     const { name } = questions.data;
     const [positiveScore, setPositiveScore] = useState(0);
     const [negativeScore, setNegativeScore] = useState(0);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
     console.log(questions);
     return (

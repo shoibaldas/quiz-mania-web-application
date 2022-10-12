@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const Topics = ({ topic }) => {
     const { id, logo, name, total } = topic;
     return (
-        <div className="flex flex-col transition duration-300 bg-white rounded shadow-sm hover:shadow">
-            <div className="relative w-full h-64">
+        <div className="flex flex-col transition duration-400 bg-white rounded-lg shadow-2xl hover:shadow">
+            <div className="relative w-full h-78 md:h-48">
                 <img src={logo} className="object-cover w-full h-full bg-black rounded-t" alt="Plan" />
             </div>
             <div className="flex flex-col justify-between flex-grow p-8 border border-t-0 rounded-b">

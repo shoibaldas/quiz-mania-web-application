@@ -30,7 +30,7 @@ const Home = () => {
                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae.
                 </p>
             </div>
-            <div className="grid max-w-md gap-10 row-gap-8 lg:max-w-screen-lg sm:row-gap-10 lg:grid-cols-3 xl:max-w-screen-lg sm:mx-auto">
+            <div className="grid max-w-md gap-10 row-gap-8 lg:max-w-screen-lg sm:row-gap-10 lg:grid-cols-4 xl:max-w-screen-lg sm:mx-auto">
                 {
                     topics.map(topic => <Topics
                         key={topic.id}
@@ -39,7 +39,6 @@ const Home = () => {
                     </Topics>)
                 }
             </div>
-            
         </div>
     );
 };

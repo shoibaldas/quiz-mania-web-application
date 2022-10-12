@@ -26,9 +26,15 @@ I have used these features to build the app,
 
 These are backend features to develop the app. And I used for fontend component CSS,
 
-### `Tailwind`
+### `Tailwind CSS`
 
-For icons, I have used both svg files and also icons from,
+To display the data from API in categorized way, I have used,
 
-### HeroIcons
+### `React rechart`
+
+For icons, I have used both svg files and also icons from "HeroIcons".
+
+### Netlify App Link:
+
+### `https://quiz-maina.netlify.app/`
 

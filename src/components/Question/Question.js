@@ -8,16 +8,16 @@ const Question = ({ quiz, positiveScore, setPositiveScore, negativeScore, setNeg
     const handleButtonClick = (answer) => {
         if (JSON.stringify(answer) === JSON.stringify(correctAnswer)) {
             setPositiveScore(positiveScore + 1);
-            toast.success('The Answer is correct!', { autoClose: 1000 })
+            toast.success('The Answer is correct!')
         }
         else {
             setNegativeScore(negativeScore < 0 ? 0 : negativeScore + 1);
-            toast.error('Your Answer is wrong! Try Again.', { autoClose: 1000 })
+            toast.error('Your Answer is wrong! Try Again.')
         }
     }
 
     const checkCorrectAnswer = (answer) => {
-        toast.info(`The correct answer is : ${correctAnswer}`, { autoClose: 1000 })
+        toast.info(`The correct answer is : ${correctAnswer}`)
     }
     return (
         <div
@@ -33,7 +33,7 @@ const Question = ({ quiz, positiveScore, setPositiveScore, negativeScore, setNeg
                 </div>
 
                 <div className="flex mb-3">
-                    <div class="flex flex-col gap-4" role="group">
+                    <div className="flex flex-col gap-4" role="group">
                         {
                             options.map((input, idx) => <button key={idx} onClick={(event) => handleButtonClick(event.target.innerText)} className="block mt-2 border border-violet-900 rounded-lg py-2 px-6 hover:bg-violet-200 cursor-pointer">{input}</button>)
                         }
